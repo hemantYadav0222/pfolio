@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #aaa; */
+  box-sizing: border-box;
+  font-size: large;
+  background-color: #eee;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.navigation {
+  font-family: "Open Sans", sans-serif;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 40px;
+  flex-wrap: wrap;
+}
+
+.navigation > div {
+  padding: 30px;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 200px;
+}
+.right-home-section-r2 {
+  background-color: #ddd;
+  width: 320px;
+  height: 320px;
+  border-radius: 160px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.right-home-section-r1 {
+  background-color: #eee;
+  width: 360px;
+  height: 360px;
+  border-radius: 180px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.name {
+  font-size: 58px;
+}
+
+.designation {
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 44px;
+}
+
+.profile-pic {
+  border-radius: 140px;
+  background-color: #00f;
+  width: 280px;
+  height: 280px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+
+  line-height: 44px;
+}
+.contacts > * {
+  margin-right: 10px;
+}
+
+.about-section {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.information {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skills-list > li {
+  padding: 10px;
+  background-color: aquamarine;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.experience-section {
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.education {
+  width: 30%;
+  padding: 40px;
+}
+
+.experience {
+  width: 50%;
+  border-left: 2px solid #555;
+  padding: 40px;
+  display: flex;
+}
+.edu-title {
+  font-size: 24px;
+  border: 2px solid rgb(34, 230, 164);
+  width: fit-content;
+  color: rgb(26, 204, 145);
+}
+
+.edu-title-name {
+  padding: 10px;
+}
+.icon {
+  justify-content: center;
+  font-size: 10px;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-section > div {
+    width: 100%;
+  }
+
+  .right-home-section {
+    display: none;
+  }
+
+  .home-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .information {
+    margin: 10%;
+  }
+
+  .about-section {
+    padding-bottom: 50px;
+  }
+}
